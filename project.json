@@ -1,0 +1,511 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "The title screen from a indev-game called Lushfoil Photography Sim. Web Version with a beautiful clock made by Wesley Prado (aka Blaxpow). Transform your desktop into a mesmerizing masterpiece with the Wavy Grass Wallpaper Engine. Immerse yourself in a dynamic world of wavy grass visuals and a customizable neon date and time display. Elevate your desktop experience with the power to upload your own backgrounds, toggle clock visibility, and fine-tune advanced properties. Unleash your creativity and make your desktop truly your own.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"PolygonAngle" : 
+			{
+				"index" : 0,
+				"max" : 12,
+				"min" : 1,
+				"order" : 100,
+				"text" : "Polygon",
+				"type" : "slider",
+				"value" : 12
+			},
+			"pwcircle_radius" : 
+			{
+				"index" : 1,
+				"max" : 100,
+				"min" : 1,
+				"order" : 101,
+				"text" : "Radius",
+				"type" : "slider",
+				"value" : 45
+			},
+			"circle_y" : 
+			{
+				"index" : 2,
+				"max" : 100,
+				"min" : 1,
+				"order" : 100,
+				"text" : "Circle PosY",
+				"type" : "slider",
+				"value" : 50
+			},
+			"pwcircle_style" : 
+			{
+				"options" :
+				[
+					{
+						"label" : "Bar",
+						"value" : 1
+					},
+					{
+						"label" : "Peak",
+						"value" : 2
+					},
+					{
+						"label" : "Peak No Line",
+						"value" : 3
+					}
+				],
+				"order" : 48,
+				"text" : "Wave Style",
+				"type" : "combo",
+				"value" : 1
+			},
+			"advanced_properties" : 
+			{
+				"index" : 8,
+				"order" : 108,
+				"text" : "Advanced properties",
+				"type" : "bool",
+				"value" : false
+			},
+			"background_alignment" : 
+			{
+				"condition" : "",
+				"index" : 6,
+				"options" : 
+				[
+					{
+						"label" : "Center",
+						"value" : "center"
+					},
+					{
+						"label" : "Cover",
+						"value" : "cover"
+					},
+					{
+						"label" : "Contain",
+						"value" : "contain"
+					},
+					{
+						"label" : "Stretch",
+						"value" : "stretch"
+					}
+				],
+				"order" : 106,
+				"text" : "Background alignment",
+				"type" : "combo",
+				"value" : "cover"
+			},
+			"clock_color" : 
+			{
+				"condition" : "advanced_properties.value == true && hide_clock.value == false",
+				"index" : 14,
+				"order" : 114,
+				"text" : "Clock color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"clock_size_rem" : 
+			{
+				"condition" : "advanced_properties.value == true && hide_clock.value == false",
+				"fraction" : true,
+				"index" : 17,
+				"max" : 100,
+				"min" : 0,
+				"order" : 117,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Clock size",
+				"type" : "slider",
+				"value" : 0
+			},
+			"hide_clock" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "Hide clock",
+				"type" : "bool",
+				"value" : false
+			},
+			"hour" : 
+			{
+				"condition" : "advanced_properties.value == true && hide_clock.value == false",
+				"index" : 12,
+				"options" : 
+				[
+					{
+						"label" : "2-digit",
+						"value" : "2-digit"
+					},
+					{
+						"label" : "Numeric",
+						"value" : "numeric"
+					}
+				],
+				"order" : 112,
+				"text" : "Hour",
+				"type" : "combo",
+				"value" : "numeric"
+			},
+			"image" : 
+			{
+				"condition" : "",
+				"fileType" : "image",
+				"index" : 4,
+				"order" : 104,
+				"text" : "Image",
+				"type" : "file",
+				"value" : ""
+			},
+			"left_position" : 
+			{
+				"condition" : "advanced_properties.value == true && hide_clock.value == false",
+				"fraction" : true,
+				"index" : 16,
+				"max" : 100,
+				"min" : 0,
+				"order" : 116,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Left position %",
+				"type" : "slider",
+				"value" : 50
+			},
+			"locale" : 
+			{
+				"condition" : "hide_clock.value == false",
+				"index" : 3,
+				"options" : 
+				[
+					{
+						"label" : "Arabic (Saudi Arabia)",
+						"value" : "ar-SA"
+					},
+					{
+						"label" : "Australian English",
+						"value" : "en-AU"
+					},
+					{
+						"label" : "Argentine Spanish",
+						"value" : "es-AR"
+					},
+					{
+						"label" : "Bangla (Bangladesh)",
+						"value" : "bn-BD"
+					},
+					{
+						"label" : "Bangla (India)",
+						"value" : "bn-IN"
+					},
+					{
+						"label" : "Belgian Dutch",
+						"value" : "nl-BE"
+					},
+					{
+						"label" : "Belgian French",
+						"value" : "fr-BE"
+					},
+					{
+						"label" : "Brazilian Portuguese",
+						"value" : "pt-BR"
+					},
+					{
+						"label" : "British English",
+						"value" : "en-GB"
+					},
+					{
+						"label" : "Canadian English",
+						"value" : "en-CA"
+					},
+					{
+						"label" : "Canadian French",
+						"value" : "fr-CA"
+					},
+					{
+						"label" : "Castilian Spanish",
+						"value" : "es-ES"
+					},
+					{
+						"label" : "Chilean Spanish",
+						"value" : "es-CL"
+					},
+					{
+						"label" : "Colombian Spanish",
+						"value" : "es-CO"
+					},
+					{
+						"label" : "Czech (Czech Republic)",
+						"value" : "cs-CZ"
+					},
+					{
+						"label" : "Danish (Denmark)",
+						"value" : "da-DK"
+					},
+					{
+						"label" : "Austrian German",
+						"value" : "de-AT"
+					},
+					{
+						"label" : "\"Swiss\" German",
+						"value" : "de-CH"
+					},
+					{
+						"label" : "Standard German",
+						"value" : "de-DE"
+					},
+					{
+						"label" : "Modern Greek",
+						"value" : "el-GR"
+					},
+					{
+						"label" : "Australian English",
+						"value" : "en-AU"
+					},
+					{
+						"label" : "US English",
+						"value" : "en-US"
+					},
+					{
+						"label" : "English (South Africa)",
+						"value" : "en-ZA"
+					},
+					{
+						"label" : "European Portuguese",
+						"value" : "pt-PT"
+					},
+					{
+						"label" : "Finnish (Finland)",
+						"value" : "fi-FI"
+					},
+					{
+						"label" : "Hong Kong, traditional characters",
+						"value" : "zh-HK"
+					},
+					{
+						"label" : "Hebrew (Israel)",
+						"value" : "he-IL"
+					},
+					{
+						"label" : "Hindi (India)",
+						"value" : "hi-IN"
+					},
+					{
+						"label" : "Hungarian (Hungary)",
+						"value" : "hu-HU"
+					},
+					{
+						"label" : "Indonesian (Indonesia)",
+						"value" : "id-ID"
+					},
+					{
+						"label" : "Indian English",
+						"value" : "en-IN"
+					},
+					{
+						"label" : "Indian Tamil",
+						"value" : "ta-IN"
+					},
+					{
+						"label" : "Irish English",
+						"value" : "en-IE"
+					},
+					{
+						"label" : "Italian (Switzerland)",
+						"value" : "it-CH"
+					},
+					{
+						"label" : "Standard Italian",
+						"value" : "it-IT"
+					},
+					{
+						"label" : "Japanese (Japan)",
+						"value" : "ja-JP"
+					},
+					{
+						"label" : "Korean (Republic of Korea)",
+						"value" : "ko-KR"
+					},
+					{
+						"label" : "Mexican Spanish",
+						"value" : "es-MX"
+					},
+					{
+						"label" : "New Zealand English",
+						"value" : "en-NZ"
+					},
+					{
+						"label" : "Norwegian (Norway)",
+						"value" : "no-NO"
+					},
+					{
+						"label" : "Polish (Poland)",
+						"value" : "pl-PL"
+					},
+					{
+						"label" : "Romanian (Romania)",
+						"value" : "ro-RO"
+					},
+					{
+						"label" : "Russian (Russian Federation)",
+						"value" : "ru-RU"
+					},
+					{
+						"label" : "Saudi Arabian Arabic",
+						"value" : "ar-SA"
+					},
+					{
+						"label" : "Slovak (Slovakia)",
+						"value" : "sk-SK"
+					},
+					{
+						"label" : "Sri Lankan Tamil",
+						"value" : "ta-LK"
+					},
+					{
+						"label" : "Swedish (Sweden)",
+						"value" : "sv-SE"
+					},
+					{
+						"label" : "Thai (Thailand)",
+						"value" : "th-TH"
+					},
+					{
+						"label" : "Turkish (Turkey)",
+						"value" : "tr-TR"
+					},
+					{
+						"label" : "Mainland China, simplified characters",
+						"value" : "zh-CN"
+					}
+				],
+				"order" : 103,
+				"text" : "Locale",
+				"type" : "combo",
+				"value" : "en-US"
+			},
+			"minute" : 
+			{
+				"condition" : "advanced_properties.value == true && hide_clock.value == false",
+				"index" : 13,
+				"options" : 
+				[
+					{
+						"label" : "2-digit",
+						"value" : "2-digit"
+					},
+					{
+						"label" : "Numeric",
+						"value" : "numeric"
+					}
+				],
+				"order" : 113,
+				"text" : "Minute",
+				"type" : "combo",
+				"value" : "numeric"
+			},
+			"mute_video" : 
+			{
+				"index" : 7,
+				"order" : 107,
+				"text" : "Mute video",
+				"type" : "bool",
+				"value" : true
+			},
+			"option_hour12" : 
+			{
+				"condition" : "hide_clock.value == false",
+				"index" : 2,
+				"order" : 102,
+				"text" : "12h",
+				"type" : "bool",
+				"value" : false
+			},
+			"playback_rate" : 
+			{
+				"condition" : "advanced_properties.value == true",
+				"fraction" : true,
+				"index" : 10,
+				"max" : 16,
+				"min" : 0.5,
+				"order" : 110,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Video playback rate",
+				"type" : "slider",
+				"value" : 1
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.3568627450980392 0.43137254901960786 0.4196078431372549"
+			},
+			"top_position" : 
+			{
+				"condition" : "advanced_properties.value == true && hide_clock.value == false",
+				"fraction" : true,
+				"index" : 15,
+				"max" : 100,
+				"min" : 0,
+				"order" : 115,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Top position %",
+				"type" : "slider",
+				"value" : 35
+			},
+			"video" : 
+			{
+				"condition" : "",
+				"fileType" : "video",
+				"index" : 5,
+				"order" : 105,
+				"text" : "Video",
+				"type" : "file",
+				"value" : ""
+			},
+			"video_volume" : 
+			{
+				"condition" : "advanced_properties.value == true",
+				"fraction" : false,
+				"index" : 9,
+				"max" : 100,
+				"min" : 0,
+				"order" : 109,
+				"text" : "Video volume",
+				"type" : "slider",
+				"value" : 0
+			},
+			"weekday" : 
+			{
+				"condition" : "advanced_properties.value == true && hide_clock.value == false",
+				"index" : 11,
+				"options" : 
+				[
+					{
+						"label" : "Long",
+						"value" : "long"
+					},
+					{
+						"label" : "Short",
+						"value" : "short"
+					}
+				],
+				"order" : 111,
+				"text" : "Weekday",
+				"type" : "combo",
+				"value" : "long"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"tags" : [ "Landscape" ],
+	"title" : "Custom Wallpaper",
+	"type" : "web",
+	"version" : 4,
+	"visibility" : "public",
+	"workshopid" : "2884798032",
+	"workshopurl" : "steam://url/CommunityFilePage/2884798032"
+}
